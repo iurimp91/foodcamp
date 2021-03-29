@@ -1,0 +1,24 @@
+body {
+    background-color: #E5E5E5;
+}
+
+.topo {
+    width: 100%;
+    height: 92px;
+    background-color: #CF2B2B;
+    color: white;
+    padding-left: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    font-family: 'Righteous';
+    font-size: 44px;
+    margin-bottom: 5px;
+}
