@@ -109,3 +109,11 @@ h2:first-of-type {
 .check {
     box-shadow: inset 0 0 0 5px #32B72F;
 }
+
+.box-comida ion-icon {
+    position: absolute;
+    right: 12.78px;
+    bottom: 15.78px;
+    font-size: 15.44px;
+    color: #32B72F;
+}
