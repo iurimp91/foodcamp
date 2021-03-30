@@ -39,7 +39,8 @@ h2:first-of-type {
     height: auto;
     display: flex;
     padding-left: 19px;
-    overflow: hidden;
+    padding-right: 19px; /*POR QUE NÃO FUNCIONA O PADDING RIGHT*/
+    overflow: scroll;
     font-family: 'Roboto';
 }
 
