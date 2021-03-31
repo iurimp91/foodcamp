@@ -20,20 +20,20 @@
 
     <h2>Primeiro, seu prato</h2><!--MENU PRATO-->
     <ul>
-        <li class="check">
+        <li onclick="escolha()">
             <img src="imagens/frango_yin_yang 1.png">
             <h3>Frango Yin Yang</h3>
             <p>Um pouco de batata, um pouco de salada</p>
             R$ 14,90
-            <ion-icon name="checkmark-circle"></ion-icon>
+            <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
         </li>
-        <li>
+        <li onclick="escolha()">
             <img src="imagens/arroz-feijao.jpg">
             <h3>Arroz e Feijão</h3>
             <p>Um pouco de arroz, um pouco de feijão</p>
             R$ 11,90
         </li>
-        <li>
+        <li onclick="escolha()">
             <img src="imagens/podrao.jpg">
             <h3>X-Podrão</h3>
             <p>Um nada de saúde, um nada de gourmet</p>
@@ -43,19 +43,19 @@
 
     <h2>Agora, sua bebida</h2> <!--MENU BEBIDA-->
     <ul>
-        <li>
+        <li onclick="escolha()">
             <img src="imagens/coquinha_gelada 1.png">
             <h3>Coquinha gelada</h3>
             <p>Lata 350ml</p>
             R$ 4,90
         </li>
-        <li>
+        <li onclick="escolha()">
             <img src="imagens/agua-de-coco.jpg">
             <h3>Água de Coco</h3>
             <p>Garrafa 1000ml</p>
             R$ 7,90
         </li>
-        <li>
+        <li onclick="escolha()">
             <img src="imagens/cervejas.jpg">
             <h3>Cerveja</h3>
             <p>Garrafa 600ml</p>
@@ -65,19 +65,19 @@
 
     <h2>Por fim, sua sobremesa</h2> <!--MENU SOBREMESA-->
     <ul>
-        <li>
+        <li onclick="escolha()">
             <img src="imagens/pudim 1.png">
             <h3>Pudim</h3>
             <p>Apenas pudim</p>
             R$ 7,90
         </li>
-        <li>
+        <li onclick="escolha()">
             <img src="imagens/petit-gateau.jpg">
             <h3>Petit Gateau</h3>
             <p>Sorvete de creme</p>
             R$ 14,90
         </li>
-        <li>
+        <li onclick="escolha()">
             <img src="imagens/sorvete.jpg">
             <h3>Sorvete caseiro</h3>
             <p>Sabor chocolate</p>
@@ -104,11 +104,12 @@
             <div class="total">
                 TOTAL <span>R$ 27,90</span>
             </div>
-            <button>Tudo certo, pode pedir!</button>
+            <button onclick="selecionado()">Tudo certo, pode pedir!</button>
             <strong>Cancelar</strong>
         </div>
     </div>
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

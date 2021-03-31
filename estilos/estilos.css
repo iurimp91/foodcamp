@@ -82,6 +82,22 @@ li p {
     margin-bottom: 13px;
 }
 
+.check-borda {
+    box-shadow: inset 0 0 0 5px #32B72F;
+}
+
+li ion-icon {
+    position: absolute;
+    right: 12.78px;
+    bottom: 15.78px;
+    font-size: 15.44px;
+    color: #32B72F;
+}
+
+.escondido {
+    display: none;
+}
+
 .inferior {
     width: 100%;
     height: 92px;
@@ -106,18 +122,6 @@ li p {
     letter-spacing: 0.018em;
 }
 
-.check {
-    box-shadow: inset 0 0 0 5px #32B72F;
-}
-
-li ion-icon {
-    position: absolute;
-    right: 12.78px;
-    bottom: 15.78px;
-    font-size: 15.44px;
-    color: #32B72F;
-}
-
 .confirmar-pedido {
     width: 100%;
     height: 100%;
@@ -134,14 +138,14 @@ li ion-icon {
     background-color: #50D074;
     margin-left: auto;
     margin-right: auto;
-    margin-top: calc((100vh - 92px - 225px) / 2); /*POR QUE DEU CERTO?*/
+    margin-top: calc(50vh - (353px/2)); /*POR QUE DEU CERTO?*/
     border-radius: 9px;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
     font-size: 22px;
     color: white;
     letter-spacing: 0.018em;
     font-family: 'Roboto';
-    padding: 0 26px; 
+    padding: 0 26px;
     display: flex;
     flex-direction: column;
     align-items: center;
