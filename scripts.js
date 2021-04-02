@@ -114,4 +114,7 @@ function fecharPedido () {
     confirmarSobremesa.innerHTML = sobremesa;
     const confirmarSobremesaPreco = document.querySelector(".confirmar-preco-sobremesa");
     confirmarSobremesaPreco.innerHTML = precoSobremesa;
+
+    const precoTotal = document.querySelector(".preco-total");
+    precoTotal.innerHTML = precoPrato + precoBebida + precoSobremesa;
 }
