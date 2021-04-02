@@ -103,18 +103,20 @@ function fecharPedido () {
     const confirmarPrato = document.querySelector(".confirmar-prato");
     confirmarPrato.innerHTML = prato;
     const confirmarPratoPreco = document.querySelector(".confirmar-preco-prato");
-    confirmarPratoPreco.innerHTML = precoPrato;
+    confirmarPratoPreco.innerHTML = precoPrato.toFixed(2).replace(".", ",");
 
     const confirmarBebida = document.querySelector(".confirmar-bebida");
     confirmarBebida.innerHTML = bebida;
     const confirmarBebidaPreco = document.querySelector(".confirmar-preco-bebida");
-    confirmarBebidaPreco.innerHTML = precoBebida;
+    confirmarBebidaPreco.innerHTML = precoBebida.toFixed(2).replace(".", ",");
 
     const confirmarSobremesa = document.querySelector(".confirmar-sobremesa");
     confirmarSobremesa.innerHTML = sobremesa;
     const confirmarSobremesaPreco = document.querySelector(".confirmar-preco-sobremesa");
-    confirmarSobremesaPreco.innerHTML = precoSobremesa;
+    confirmarSobremesaPreco.innerHTML = precoSobremesa.toFixed(2).replace(".", ",");
+
+    const soma = precoPrato + precoBebida + precoSobremesa;
 
     const precoTotal = document.querySelector(".preco-total");
-    precoTotal.innerHTML = precoPrato + precoBebida + precoSobremesa;
+    precoTotal.innerHTML = soma.toFixed(2).replace(".", ",");
 }
