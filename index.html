@@ -95,25 +95,25 @@
 
     <div class="inferior">
         <button class="fechado">Selecione os 3 itens<br/> para fechar o pedido</button>
-        <button class="aberto escondido">Fechar pedido</button>
+        <button class="aberto escondido" onclick="fecharPedido()">Fechar pedido</button>
     </div>
 
-    <div class="confirmar-pedido">
+    <div class="confirmar-pedido escondido">
         <div class="pedido">
             <strong>Confirme seu pedido</strong>
             <div class="item">
-                Frango Yin Yang <span>14,90</span>
+                <span class="confirmar-prato">Frango Yin Yang</span> <span class="confirmar-preco-prato">14,90</span>
             </div>
             <div class="item">
-                Coquinha gelada <span>4,90</span>
+                <span class="confirmar-bebida">Coquinha gelada</span> <span class="confirmar-preco-bebida">4,90</span>
             </div>
             <div class="item">
-                Pudim <span>7,90</span>
+                <span class="confirmar-sobremesa">Pudim</span> <span class="confirmar-preco-sobremesa">7,90</span>
             </div>
             <div class="total">
                 TOTAL <span>R$ 27,90</span>
             </div>
-            <button onclick="selecionado()">Tudo certo, pode pedir!</button>
+            <button>Tudo certo, pode pedir!</button>
             <strong>Cancelar</strong>
         </div>
     </div>

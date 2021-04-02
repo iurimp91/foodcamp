@@ -92,3 +92,26 @@ function liberarPedidoBotao() {
         botaoAberto.classList.remove("escondido");
     }
 }
+
+function fecharPedido () {
+    const nome = prompt("Por favor, informe seu nome.");
+    const endereco = prompt("Por favor, informe seu endereço.");
+
+    const confirmarPedido = document.querySelector(".confirmar-pedido");
+    confirmarPedido.classList.remove("escondido");
+
+    const confirmarPrato = document.querySelector(".confirmar-prato");
+    confirmarPrato.innerHTML = prato;
+    const confirmarPratoPreco = document.querySelector(".confirmar-preco-prato");
+    confirmarPratoPreco.innerHTML = precoPrato;
+
+    const confirmarBebida = document.querySelector(".confirmar-bebida");
+    confirmarBebida.innerHTML = bebida;
+    const confirmarBebidaPreco = document.querySelector(".confirmar-preco-bebida");
+    confirmarBebidaPreco.innerHTML = precoBebida;
+
+    const confirmarSobremesa = document.querySelector(".confirmar-sobremesa");
+    confirmarSobremesa.innerHTML = sobremesa;
+    const confirmarSobremesaPreco = document.querySelector(".confirmar-preco-sobremesa");
+    confirmarSobremesaPreco.innerHTML = precoSobremesa;
+}

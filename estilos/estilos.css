@@ -145,10 +145,6 @@ li ion-icon {
     z-index: 2;
 }
 
-.confirmar-pedido {
-    display: none;
-}
-
 .pedido {
     width: 90%;
     height: 353px;
