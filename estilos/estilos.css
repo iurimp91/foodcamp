@@ -194,6 +194,7 @@ li ion-icon {
     font-weight: bold;
     color: #50D074;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .pedido strong:last-child {

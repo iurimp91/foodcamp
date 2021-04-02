@@ -83,6 +83,8 @@ function escolha3(item, check, opcao, preco) {
     liberarPedidoBotao();
 }
 
+let soma;
+
 function liberarPedidoBotao() {
     const botaoFechado = document.querySelector(".inferior .fechado");
     const botaoAberto = document.querySelector(".inferior .aberto");
@@ -93,9 +95,12 @@ function liberarPedidoBotao() {
     }
 }
 
+let nome;
+let endereco;
+
 function fecharPedido () {
-    const nome = prompt("Por favor, informe seu nome.");
-    const endereco = prompt("Por favor, informe seu endereço.");
+    nome = prompt("Por favor, informe seu nome.");
+    endereco = prompt("Por favor, informe seu endereço.");
 
     const confirmarPedido = document.querySelector(".confirmar-pedido");
     confirmarPedido.classList.remove("escondido");
@@ -115,8 +120,16 @@ function fecharPedido () {
     const confirmarSobremesaPreco = document.querySelector(".confirmar-preco-sobremesa");
     confirmarSobremesaPreco.innerHTML = precoSobremesa.toFixed(2).replace(".", ",");
 
-    const soma = precoPrato + precoBebida + precoSobremesa;
+    soma = precoPrato + precoBebida + precoSobremesa;
 
     const precoTotal = document.querySelector(".preco-total");
     precoTotal.innerHTML = soma.toFixed(2).replace(".", ",");
 }
+
+function enviarMensagem() {
+    let texto = "Olá, gostaria de fazer o pedido:\n - Prato: " + prato + "\n- Bebida: " + bebida + "\n- Sobremesa: " + sobremesa + "\nTotal: R$ " + soma.toFixed(2).replace(".", ",") + "\n\nNome: " + nome + "\nEndereço: " + endereco;
+    texto = encodeURIComponent(texto);
+
+    open("https://wa.me/5527981582571?text=" + texto);
+}
+
