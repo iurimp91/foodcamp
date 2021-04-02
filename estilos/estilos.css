@@ -132,6 +132,10 @@ li ion-icon {
     z-index: 2;
 }
 
+.confirmar-pedido {
+    display: none;
+}
+
 .pedido {
     width: 90%;
     height: 353px;
@@ -185,8 +189,4 @@ li ion-icon {
 
 .pedido strong:last-child {
     font-size: 20px;
-}
-
-.confirmar-pedido {
-    display: none;
 }
