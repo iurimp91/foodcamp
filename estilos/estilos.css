@@ -40,7 +40,6 @@ ul {
     height: auto;
     display: flex;
     padding-left: 19px;
-    padding-right: 19px; /*POR QUE NÃO FUNCIONA O PADDING RIGHT*/
     overflow: scroll;
     font-family: 'Roboto';
 }
@@ -51,7 +50,7 @@ ul {
     font-size: 1px;
 }
 
-ul:nth-child(7) { /*POR QUE ESSE 7 E NÃO 3?*/
+ul:nth-child(7) {
     margin-bottom: 108px;
 }
 

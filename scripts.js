@@ -100,7 +100,14 @@ let endereco;
 
 function fecharPedido () {
     nome = prompt("Por favor, informe seu nome.");
+    while (nome === null || nome === "") {
+        nome = prompt("Por favor, informe seu nome.");
+    }
+
     endereco = prompt("Por favor, informe seu endereço.");
+    while (endereco === null || endereco === "") {
+        endereco = prompt("Por favor, informe seu endereço.");
+    }
 
     const confirmarPedido = document.querySelector(".confirmar-pedido");
     confirmarPedido.classList.remove("escondido");
