@@ -137,7 +137,7 @@ function enviarMensagem() {
     let texto = "Olá, gostaria de fazer o pedido:\n- Prato: " + prato + "\n- Bebida: " + bebida + "\n- Sobremesa: " + sobremesa + "\nTotal: R$ " + soma.toFixed(2).replace(".", ",") + "\n\nNome: " + nome + "\nEndereço: " + endereco;
     texto = encodeURIComponent(texto);
 
-    open("https://wa.me/5527981582571?text=" + texto);
+    open("https://wa.me/5500912345678?text=" + texto);
 }
 
 function cancelar() {
